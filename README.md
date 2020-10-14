@@ -3,6 +3,6 @@ Arquivos para automatização de cálculos de sistemas controle digitais com Oct
 
 Dependências octave para estes arquivos:
 
-- Python instalado no PATH do sistema com [SymPy](https://www.sympy.org/en/index.html).
+- Python instalado no PATH do sistema com a biblioteca [SymPy](https://www.sympy.org/en/index.html).
 
 - Pacote symbolic https://octave.sourceforge.io/symbolic/
