@@ -27,3 +27,11 @@ Projetos de implementação foram baseados nos seguintes laboratórios da Texas 
 # Controle
 
 ![](./docs/teste.png)
+
+# Resultados Delfino
+
+![](./docs/delfino/1.jpg)
+
+# Resultados Piccolo
+
+![](./docs/piccolo/1.JPG)
