@@ -25,7 +25,7 @@ Projetos de implementação foram baseados nos seguintes laboratórios da Texas 
 ![](./docs/plantarec.PNG)
 
 # Controle
-
+![](./docs/blocos.png)
 ![](./docs/teste.png)
 
 # Resultados Delfino
