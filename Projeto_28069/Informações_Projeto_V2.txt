@@ -1,0 +1,37 @@
+Original 25/08:
+
+Em EPwm.c:
+Scaler modificado para EPWM1 e EPWM-2:
+Divisor de Clock ADC: EPwm2Regs.TBCTL.all = 0xC933
+Divisor de Clock PWM: EPwm1Regs.TBCTL.all = 0xC833 (metade do ADC)
+
+Em Lab.h:
+Taxa de Amostragem->ADC_SAMPLE_PERIOD: 257.3Hz (22100)
+Taxa PWM->PWM_HALF_PERIOD: 257.3Hz (44200)
+Duty Cycle inicial: 0% (44200)
+
+Em DefaultIsr_3_4.c:
+Pino de sinalização de interrupção: GPIO18 (Terminal 29)
+Pino PWM: EPWM-1A GPIO00 (Terminal 17)
+Troca de referência (1.0V <-> 1.5V) a cada 100ms com contador interno
+Implementação do Sistema de Controle previamente proposto
+
+------
+
+Alterações 26/08
+
+Em EPwm.c:
+Divisor de Clock PWM: EPwm1Regs.TBCTL.all = 0xC033 (metade do ADC)
+Nova Taxa PWM->PWM_HALF_PERIOD: 2573Hz (17676) [ x10 mais que a anterior ]
+Duty Cycle inicial: 0% (17676)
+
+
+Em DefaultIsr_3_4.c:
+Troca de referência agora ocorre antes do cálculo de controle atual
+Modificado cálculo de Duty Cycle, divisão da conta ocorre apenas na pré-compilação
+
+Em Lab.h:
+Inserido definição para cálculo de Duty Cycle:
+PWM_DUTY_CYCLE -> 17676
+PWM_DUTY_GANHO -> PWM_DUTY_CYCLE/3.3
+

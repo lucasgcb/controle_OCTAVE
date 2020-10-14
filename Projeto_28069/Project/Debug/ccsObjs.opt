@@ -1,0 +1,1 @@
+"./Watchdog.obj" "./SysCtrl.obj" "./PieVect.obj" "./PieCtrl.obj" "./Main_3.obj" "./Gpio.obj" "./F2806x_GlobalVariableDefs.obj" "./EPwm.obj" "./DelayUs.obj" "./DefaultIsr_3_4.obj" "./CodeStartBranch.obj" "./Adc.obj" "../F2806x_Headers_nonBIOS.cmd" "../Lab_2_3.cmd" -l"libc.a" 
