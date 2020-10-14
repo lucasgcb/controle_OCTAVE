@@ -1,0 +1,17 @@
+Em EPwm.c:
+Scaler modificado para EPWM-2:
+ClkCfgRegs.PERCLKDIVSEL.bit.EPWMCLKDIV = 1; // Dividir EPWMCLK por 2	
+Divisor de Clock ADC: EPwm2Regs.TBCTL.all = 0xC933
+
+Em Lab.h:
+Taxa de Amostragem->ADC_SAMPLE_PERIOD: 257.3Hz (24300)
+Taxa PWM->PWM_HALF_PERIOD: 2573Hz (19430)
+Duty Cycle inicial 0% -> PWM_DUTY_CYCLE/3.3 (19430)
+PWM_DUTY_GANHO -> PWM_DUTY_CYCLE/3.3
+
+Em DefaultIsr_7.c:
+Pino de sinalização de interrupção: GPIO18 (Pino 71)
+Pino ADC: ADCINA0 (Pino 09)
+Pino PWM: PWM1A (Pino 49)
+Troca de referência (1.0V <-> 1.5V) a cada 100ms com contador interno
+Implementação do Sistema de Controle previamente proposto
