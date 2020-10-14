@@ -1,5 +1,5 @@
 # controle_OCTAVE
-Arquivos para automatização de cálculos de sistemas controle digitais com Octave.
+Arquivos para automatização de cálculos de sistemas controle digitais utilizando root locus com Octave.
 
 Dependências octave para estes arquivos:
 
